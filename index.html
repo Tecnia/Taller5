@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>Login Taller3.1</title>
+
+  
+  <!-- librerias para login 
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+  <script src = "https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js" > </script> 
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>-->
+
+</head>
+<body>
+  
+
+  <h1>Login</h1>
+
+  <button id="loginGoogle">
+    iniciar con Google
+  </button>
+
+  <button id="loginFacebook">
+    iniciar con Facebook
+  </button>
+
+
+ <div id="root"> 
+
+      <img id="avatar" src="" alt="">
+
+ </div>
+ 
+
+ <!--  las librerias de jQuery, desde el CDN  -->
+ <script src="https://code.jquery.com/jquery-3.4.1.js" 
+ integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
+ crossorigin="anonymous">
+ </script>
+
+
+
+
+  <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+  <!-- base de datos  -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+  
+
+  
+
+
+
+    <!-- Previously loaded Firebase SDKs -->
+  
+    <script>
+      // TODO: Replace the following with your app's Firebase project configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDb1kX5sCJJVXtfXGNEwbv4iA8ltaQ27Hc",
+        authDomain: "taller05-69ef6.firebaseapp.com",
+        databaseURL: "https://taller05-69ef6.firebaseio.com",
+        projectId: "taller05-69ef6",
+        storageBucket: "taller05-69ef6.appspot.com",
+        messagingSenderId: "26578488688",
+        appId: "1:26578488688:web:30a9a73cf41537929753b5"
+      };
+  
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+
+<!-- enrutamiento  -->
+<script src="app.js"></script>
+
+</body>
+
+</html>
